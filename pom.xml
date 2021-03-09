@@ -28,10 +28,10 @@
 				<version>3.0.0</version>
 			</plugin>
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
+			  <groupId>org.mule.tools.maven</groupId>
+			  <artifactId>mule-maven-plugin</artifactId>
+			  <version>3.6.3</version>
+			  <extensions>true</extensions>				
 				<configuration>
 				<CloudHubDeployment>
 				<uri>https://anypoint.mulesoft.com</uri>
