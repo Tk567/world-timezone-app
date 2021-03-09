@@ -9,13 +9,10 @@
     <packaging>mule-application</packaging>
 
 	<name>world-demo-api</name>	
-	
-	
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<app.runtime>4.3.0-20210105</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
@@ -38,9 +35,12 @@
 		          <muleVersion>4.3.0</muleVersion>
 		          <username>tk10</username>
 		          <password>Metiyonas7</password>
-		          <applicationName>World-TimeZone-Service</applicationName>
 		          <environment>Sandbox</environment>
+		          <applicationName>World-TimeZone-Service</applicationName>
+		          <businessGroup>cdi</businessGroup>
 		          <workerType>MICRO</workerType>
+		          <workers>1</workers>
+		          <objectStoreV2>true</objectStoreV2>
 		         </CloudHubDeployment>
 				</configuration>
 			</plugin>
