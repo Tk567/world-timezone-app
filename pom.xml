@@ -28,24 +28,20 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.mule.tools.maven</groupId>
-        <artifactId>mule-maven-plugin</artifactId>
-        <version>3.3.2</version>
-        <extensions>true</extensions>
+	        <groupId>org.mule.tools.maven</groupId>
+	        <artifactId>mule-maven-plugin</artifactId>
+	        <version>3.3.2</version>
+	        <extensions>true</extensions>
         <configuration>
-		   <cloudHubDeployment>
-		      <uri>https://anypoint.mulesoft.com</uri>
-		      <muleVersion>${muleVersion}</muleVersion>
-		      <!--  Deploy User Parameter -->      
-		      <username>${username}</username>
-		      <password>${password}</password>
-		      <applicationName>${appname}</applicationName>
-		      <businessGroup>${business}</businessGroup>
-		      <environment>${env}</environment>	      
-		      <workers>${workers}</workers>
-		      <workerType>${vCore}</workerType>
-		      <objectStoreV2>true</objectStoreV2>
-		   </cloudHubDeployment>
+			<CloudHubDeployment>
+				<username>tk10</username>
+				<environment>Sandbox</environment>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
+				<applicationName>worldtimezone-service</applicationName>
+				<password>Metiyonas7</password>
+				<muleVersion>4.3.0</muleVersion>
+			</CloudHubDeployment>
 		</configuration>
 			</plugin>
 		</plugins>
